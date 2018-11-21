@@ -1,0 +1,83 @@
+.dijitDialogUnderlayWrapper {
+	background: rgba(0,0,0,.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.dijitDialog {
+	background: #fff;
+	padding: 20px;
+	border-radius: 3px;
+}
+
+.dijitDialog .dijitDialogTitleBar {
+	position: relative;
+	margin: 0 0 15px;
+    font-weight: bold;
+	text-transform: uppercase;
+}
+
+.dijitDialog .dijitDialogTitleBar .closeText {
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.dijitDialog .dijitButton {
+	cursor: pointer;
+    display: inline-block;
+    min-height: 30px;
+    padding: 0 12px;
+    border: 0;
+    background: #f7f7f7;
+    line-height: 28px;
+    color: #666;
+    letter-spacing: normal;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+    background-origin: border-box;
+    background-image: -webkit-linear-gradient(top, #fff, #eee);
+    background-image: linear-gradient(to bottom, #fff, #eee);
+    border-radius: 4px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.dijitDialog .dijitButton.esriIdSubmit {
+	background-color: #009dd8;
+    color: #fff;
+    background-image: -webkit-linear-gradient(top, #00b4f5, #008dc5);
+    background-image: linear-gradient(to bottom, #00b4f5, #008dc5);
+    border-color: rgba(0, 0, 0, 0.2);
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dijitDialog .dijitButton.esriIdCancel {
+	
+}
+
+.dijitDialog .dijitButton * {
+	outline: none;
+}
+
+.dijitDialog .dijitButton:not(:last-child) {
+	margin-right: 10px;
+}
+
+.dijitDialog .dijitButton input[type=button] {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.dijitDialog .dijitButton .dijitToggleButtonIconChar {
+	display: none;
+}

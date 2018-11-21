@@ -1,0 +1,35 @@
+#bottomContent {
+	background: @theme_description-background-color;
+	-webkit-border-radius: @theme_description-border-radius;
+	-moz-border-radius: @theme_description-border-radius;
+	-o-border-radius: @theme_description-border-radius;
+	border-radius: @theme_description-border-radius;
+	-webkit-box-shadow: 0 1px 3px @theme_description-box-shadow;
+	-moz-box-shadow: 0 1px 3px @theme_description-box-shadow;
+	-o-box-shadow: 0 1px 3px @theme_description-box-shadow;
+	box-shadow: 0 1px 3px @theme_description-box-shadow;
+	.hook-bottom-content;
+}
+
+#bottomContent #organizationSection {
+	border-bottom: @theme_description-border-width solid #d8d8d5;
+	margin: 0 10px;
+	.hook-organization-section;
+}
+
+#bottomContent #organizationSection .content {
+	margin: 0;
+	.hook-organization-section-content;
+}
+
+#bottomContent #organizationSection .content #orgDetails {
+	margin: 5px 0;
+	color: @theme_description-content-color;
+	font-family: @theme_links-font-family;
+}
+
+/* --- Hooks --- */
+
+.hook-bottom-content() {}
+.hook-organization-section() {}
+.hook-organization-section-content() {}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="cm-customizer" lang="en-gb" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Customiser</title>
+      <link id="data-uikit-theme" rel="stylesheet" href="assets/css/uikit.docs.min.css">
+      <link rel="stylesheet" href="assets/css/spectrum.css">
+      <link rel="stylesheet" href="assets/css/reject.css">
+   </head>
+   <body>
+      <nav class="tm-navbar uk-navbar uk-navbar-attached reject-nav">
+         <div class="uk-container uk-container-center">
+            <a class="uk-navbar-brand uk-visible-large" href="../code/index.html"><img class="uk-margin uk-margin-remove" src="assets/images/logo.svg"  title="UIkit" alt="UIkit"></a>
+            <ul id="personalizedPanel" class="uk-navbar-nav uk-visible-large pull-right" style="display: none;">
+               <li><span><em id="userId"></em> <button class="uk-button" id="sign-out">Sign Out</button></span></li>
+            </ul>
+         </div>
+      </nav>
+      <div class = "message" id="line1">Sorry, only admins can use Customiser</div>
+      <button id="adminLogin" class="uk-button uk-button-primary" onclick="window.location.href = 'index.html'" >Sign in as an Administrator</button>
+   </body>
+   <style>
+      .message{
+      text-align: center;
+      margin: 12px;
+      }
+      .reject-nav {
+      padding: 15px 0;
+      border: none;
+      background: #000;
+      }
+      #line1{
+      font-size: 24px;
+      padding-top: 10%;
+      padding-bottom: 10px;
+      }
+      #adminLogin{
+      margin: 0 auto;
+      display: block;
+      padding: 7px;
+      }
+   </style>
+</html>

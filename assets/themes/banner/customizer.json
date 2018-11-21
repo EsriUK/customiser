@@ -1,0 +1,172 @@
+{
+    "controls": [
+	{
+            "type": "color",
+            "vars": [
+                "*-color",
+                "*-border",
+                "*-border-top",
+                "*-border-bottom",
+                "*-border-left",
+                "*-border-right",
+                "*-background",
+                "*-text-shadow",
+                "*-box-shadow",
+                "*-gradient-top",
+                "*-gradient-bottom"
+            ]
+        },
+	{
+            "type": "file",
+            "vars": [
+                "*-file",
+                "*-upload",
+                "*-image",
+                "*-logo"
+            ]
+        },
+        {
+            "type": "font",
+            "vars": [
+                "*-font-family"
+            ],
+            "options": [
+                {"name": "Arial", "value": "\"Helvetica Neue\", Helvetica, Arial, sans-serif"},
+                {"name": "Consolas", "value": "Consolas, monospace, serif"},
+                {"name": "Georgia", "value": "Georgia, \"Times New Roman\", Times, serif"},
+                {"name": "Lucida", "value": "\"Lucida Grande\", \"Lucida Sans Unicode\", Arial, Verdana, sans-serif"},
+                {"name": "Times New Roman", "value": "\"Times New Roman\", Times, serif"},
+                {"name": "Trebuchet", "value": "\"Trebuchet MS\", Verdana, Arial, sans-serif"},
+                {"name": "Verdana", "value": "Verdana, Arial, sans-serif"}
+            ]
+        },
+	{
+            "type": "select",
+            "vars": [
+                "*-google-font"
+            ],
+            "options": [
+		{"name": "Default", "value": "\"Helvetica Neue\",Helvetica,Arial,sans-serif"},
+                {"name": "Open Sans", "value": "Open Sans"},
+                {"name": "Roboto", "value": "Roboto"}
+            ]
+        },
+	{
+            "type": "select",
+            "vars": [
+                "*-visibility"
+            ],
+            "options": [
+                {"name": "Visible", "value": "block"},
+                {"name": "Hidden", "value": "none"}
+            ]
+        },
+	{
+            "type": "select",
+            "vars": [
+                "*-sticky"
+            ],
+            "options": [
+                {"name": "True", "value": "block"},
+                {"name": "False", "value": "none"}
+            ]
+        },
+	{
+            "type": "select",
+            "vars": [
+                "*-align"
+            ],
+            "options": [
+                {"name": "Left", "value": "left"},
+                {"name": "Center", "value": "center"},
+                {"name": "Right", "value": "right"}
+            ]
+        }
+    ],
+    "groups": [
+        {
+            "label": "General",
+            "vars": [
+                "@theme_global-background-color",
+		"@theme_global-background-image",
+		"@theme_global-google-font"
+            ]
+        },
+	{
+            "label": "Banner",
+            "vars": [
+		"@theme_rotate-visibility",
+		"@theme_rotate-organisation-logo",
+		"@theme_rotate-background-color",
+		"@theme_rotate-box-shadow",
+		"@theme_rotate-border-radius",
+		"@theme_rotate-height",
+		"@margin_rotate-*"
+            ]
+        },
+	{
+            "label": "Footer",
+	    "advanced": "true",
+            "vars": [
+		"@theme_footer-background-color",
+		"@theme_footer-border-width",
+		"@theme_footer-border-color",
+		"@theme_footer-link-font-size",
+		"@spacing_footer-*"
+            ]
+        },
+	{
+            "label": "Featured Content",
+	    "advanced": "true",
+            "vars": [
+		"@theme_featured-background",
+		"@theme_featured-box-shadow",
+		"@theme_featured-border-width",
+		"@theme_featured-header-color",
+		"@theme_featured-header-align",
+		"@theme_featured-font-size",
+		"@theme_featured-font-shadow-color",
+		"@theme_featured-header-background",
+		"@theme_featured-header-border-width",
+		"@margin_featured-*"
+            ]
+        },
+	{
+            "label": "Organization Description",
+	    "advanced": "true",
+            "vars": [
+		"@theme_description-visibility",
+		"@theme_description-background-color",
+		"@theme_description-box-shadow",
+		"@theme_description-border-radius",
+		"@theme_description-border-width",
+		"@theme_description-content-color",
+		"@margin_description-*"
+            ]
+        },
+	{
+            "label": "Webmaps",
+	    "advanced": "true",
+            "vars": [
+		"@webmaps_featured-*"
+            ]
+        },
+	{
+            "label": "Links",
+	    "advanced": "true",
+            "vars": [
+		"@links-*"
+            ]
+        },
+	{
+            "label": "Navigation Buttons",
+	    "advanced": "true",
+            "vars": [
+		"@theme_featured-prev-button-image",
+		"@theme_featured-prev-button-position",
+		"@theme_featured-next-button-image",
+		"@theme_featured-next-button-position"
+            ]
+        }
+    ]
+}

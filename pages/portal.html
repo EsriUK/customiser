@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Panel component - UIkit tests</title>
+
+		<link rel="stylesheet" href="../assets/css/display.css">
+
+		<script src="../vendor/jquery.js"></script>
+		<script src="../assets/js/utils/test.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="../assets/plugins/bootstrap-3.3.6/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/examples.css" />
+
+        <script src="../assets/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+        <script src="../assets/plugins/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+        <script type="text/javascript">
+		
+			var bsTooltip = $.fn.tooltip;
+            var bsButton = $.fn.button;
+
+			$.widget.bridge('uibutton', $.ui.button);
+			$.widget.bridge('uitooltip', $.ui.tooltip);
+			$.fn.tooltip = bsTooltip;
+			$.fn.button = bsButton;
+
+        </script>
+
+	</head>
+
+	<body>
+
+		<div class="device-container">
+			
+			<div class="screen monitor">
+				
+				<div class="content">
+
+					<div class="widgetContent siteHeader top-nav" id="header"></div>
+					
+					<div class="pg">
+
+						<div id="HomeRotate" class="uk-portal uk-portal-box">
+
+							<div id="details" class="detailsShort">
+								<div id="matrixLayout" class="matrixLayoutShort">
+									<div id="imgRotator" class="imgRotator" style="position: relative;">
+										<div id="banner-html" style="left: 0px; top: 0px; position: absolute;">
+										</div>
+									</div>
+									<div id="categories" class="dots" style="display: none;">
+										<ul>
+											<li class="dojoxRotatorNumber dojoxRotatorSelected dojoxRotatorPane0 dojoxRotatorFirst dojoxRotatorLast">
+												<a href="#"><span>1</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+
+						<div id="featuredMaps" class="clearfix">
+							<div id="fHeader">
+								<h2 id="galleryTitle">Featured items</h2>
+							</div>
+							<div class="featuredMapsContainer">
+								<div class="clearfix container_16 zindexfix">
+									<div class="clearfix galleryContainer" style="position:relative;">
+										<span id="prev" class="prevButton prevButtonDisabled"></span>
+										<div dojoattachpoint="containerNode" id="gallery" widgetid="gallery">
+											<div class="clearfix galleryBackground">
+												<div dojoattachpoint="flowContainer" class="clearfix" style="opacity: 1;">
+													<div class="galleryNode small">
+														<img class="galleryThumbnail" src="https://static.arcgis.com/images/desktopapp.png">
+														<div class="galleryLabelContainer"><span alt="111" title="111">Demographics</span></div>
+													</div>
+													<div class="galleryNode small">
+														<img class="galleryThumbnail" src="https://static.arcgis.com/images/desktopapp.png">
+														<div class="galleryLabelContainer"><span alt="222" title="222">Geology</span></div>
+													</div>
+													<div class="galleryNode small">
+														<img class="galleryThumbnail" src="https://static.arcgis.com/images/desktopapp.png">
+														<div class="galleryLabelContainer"><span alt="333" title="333">National Map</span></div>
+													</div>
+													<div class="galleryNode small">
+														<img class="galleryThumbnail" src="https://static.arcgis.com/images/desktopapp.png">
+														<div class="galleryLabelContainer"><span alt="444" title="444">Imagery Basemap</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<span id="next" class="nextButton"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer">
+							<span class="esriItemLinks">
+								<a href="#!" target="_blank">Esri.com</a>
+								<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								<a href="#!">ArcGIS Marketplace</a>
+								<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								<a href="#!">Help</a>
+								<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								<a href="#!">Terms of Use</a>
+								<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								<a href="#!">Privacy</a>
+								<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								<a href="#!">Contact Esri</a>
+								<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								<a href="#!">Report Abuse</a>
+							</span>
+						</div>
+					
+					</div>
+				</div>
+				<div class="base">
+					<div class="grey-shadow"></div>
+					<div class="foot top"></div>
+					<div class="foot bottom"></div>
+					<div class="shadow"></div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

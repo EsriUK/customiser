@@ -1,0 +1,33 @@
+html {
+	font-size: @base-body-font-size;
+}
+
+body.esri {
+	font-family: @theme_global-google-font;
+	background-color: @theme_global-background-color;
+	background-image:data-uri('data:image/jpeg;base64,@{theme_global-background-image}');
+	background-size: cover;
+	.hook-base-body;
+}
+
+.esri .footer, 
+.esri .center .footer {
+	border-top: @theme_footer-border-width solid @theme_footer-border-color !important;
+	padding-top: @spacing_footer-padding-top;
+	padding-right: @spacing_footer-padding-right;
+	padding-bottom: @spacing_footer-padding-bottom;
+	padding-left: @spacing_footer-padding-left;
+	margin-top: @spacing_footer-margin-top;
+	margin-right: @spacing_footer-margin-right;
+	margin-bottom: @spacing_footer-margin-bottom;
+	margin-left: @spacing_footer-margin-left;
+	white-space: nowrap;
+	text-align: center;
+	background-color: @theme_footer-background-color;
+	font-size: @theme_footer-link-font-size;
+}
+
+/* Hooks
+ ========================================================================== */
+
+.hook-base-body() {}

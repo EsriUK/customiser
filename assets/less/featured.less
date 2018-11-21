@@ -1,0 +1,128 @@
+#featuredMaps {
+	margin: @margin_featured-margin-top 0 @margin_featured-margin-bottom 0;
+	padding: 0;
+	background: @theme_featured-background;
+	-webkit-border-radius: @theme_rotate-border-radius;
+	-moz-border-radius: @theme_rotate-border-radius;
+	-o-border-radius: @theme_rotate-border-radius;
+	border-radius: @theme_rotate-border-radius;
+	-webkit-box-shadow: 0 1px 3px @theme_featured-box-shadow;
+	-moz-box-shadow: 0 1px 3px @theme_featured-box-shadow;
+	-o-box-shadow: 0 1px 3px @theme_featured-box-shadow;
+	box-shadow: 0 1px 3px @theme_featured-box-shadow;
+	border-bottom: @theme_featured-border-width solid #B3B3B3;
+	.hook-featured-maps;
+}
+
+#featuredMaps #fHeader {
+	background: @theme_featured-header-background;
+	border-bottom: @theme_featured-header-border-width solid #ccc;
+	-webkit-border-radius: @theme_rotate-border-radius @theme_rotate-border-radius 0 0;
+	-moz-border-radius: @theme_rotate-border-radius @theme_rotate-border-radius 0 0;
+	-o-border-radius: @theme_rotate-border-radius @theme_rotate-border-radius 0 0;
+	border-radius: @theme_rotate-border-radius @theme_rotate-border-radius 0 0;
+	height: auto;
+	margin-bottom: 8px;
+	.hook-featured-maps-header;
+}
+
+#featuredMaps #fHeader h2 {
+	font-family: @theme_global-google-font;
+	font-size: @theme_featured-font-size;
+	text-shadow: 1px 1px 2px @theme_featured-font-shadow-color;
+	color: @theme_featured-header-color;
+	padding: 8px 15px;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: @theme_featured-header-align;
+	.hook-featured-maps-header-h2;
+}
+
+.prevButton {
+	display: block;
+	width: 40px;
+	height: 85px;
+	z-index: 99;
+	position: absolute;
+	top: 45px;
+	left: @theme_featured-prev-button-position;
+	border: 0;
+	background-image:data-uri('data:image/jpeg;base64,@{theme_featured-prev-button-image}');
+	//background: url('https://cdn.arcgis.com/cdn/20375/js/arcgisonline/css/images/galleryprev.png');
+	.hook-featured-maps-btn-prev;
+}
+
+.nextButton {
+	display: block;
+	width: 40px;
+	height: 85px;
+	z-index: 99;
+	position: absolute;
+	top: 45px;
+	right: @theme_featured-next-button-position;
+	border: 0;
+	background-image:data-uri('data:image/jpeg;base64,@{theme_featured-next-button-image}');
+	//background: url('https://cdn.arcgis.com/cdn/20375/js/arcgisonline/css/images/gallerynext.png');
+	.hook-featured-maps-btn-next;
+}
+
+#gallery {}
+
+#gallery .galleryBackground {
+	height: 210px;
+	.hook-featured-maps-gallery-background;
+}
+
+#gallery .galleryBackground .galleryNode {
+	float: left;
+	width: 200px;
+	height: 120px;
+	margin: 14px 18px;
+	.hook-featured-maps-gallery-node;
+}
+
+#gallery .galleryBackground .galleryNode .galleryThumbnail {
+	height: 133px;
+	width: 200px;
+	max-width: 200px;
+	max-height: 133px;
+	border: @webmaps_featured-border-width solid @webmaps_featured-border-color;
+	padding: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	background-color: @webmaps_featured-background-color;
+	background-image: none;
+}
+
+#gallery .galleryBackground .galleryNode .galleryLabelContainer {
+	color: @links-default-color;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 600;
+	line-height: 16px;
+	background-color: transparent;
+	width: 100%;
+	height: 2.5em;
+	overflow: hidden;
+	display: block;
+}
+
+#gallery .galleryBackground .galleryNode .galleryLabelContainer span {
+	font-family: @theme_links-font-family;
+	padding-top: 5px;
+}
+
+/* --- Hooks --- */
+
+.hook-featured-maps() {}
+.hook-featured-maps-header() {}
+.hook-featured-maps-header-h2() {}
+.hook-featured-maps-btn-prev() {}
+.hook-featured-maps-btn-next() {}
+.hook-featured-maps-gallery-background() {}
+.hook-featured-maps-gallery-node() {}

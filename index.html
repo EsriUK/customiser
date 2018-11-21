@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html class="cm-customizer" lang="en-gb" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Customiser</title>
+
+        <link id="data-uikit-theme" rel="stylesheet" href="assets/css/uikit.docs.min.css">
+        <link rel="stylesheet" href="assets/css/spectrum.css">
+
+        <script>
+
+            var less = {
+                env: "development"
+            };
+
+            var customizer = {styles: [
+                {
+					"name": "Default", 
+					"url": "assets/themes/default/uikit.less", 
+					"config": "assets/themes/default/customizer.json"
+				},{
+					"name": "Banner", 
+					"url": "assets/themes/banner/uikit.less", 
+					"config": "assets/themes/banner/customizer.json"
+				},{
+					"name": "Full Screen", 
+					"url": "assets/themes/fullscreen/uikit.less", 
+					"config": "assets/themes/fullscreen/customizer.json"
+				}
+            ]}; 
+
+        </script>
+
+        <script src="vendor/less.js"></script>
+        <script src="vendor/jquery.js"></script>
+        <script src="vendor/jquery.less.js"></script>
+        <script src="vendor/jquery.mustache.js"></script>
+        <script src="assets/js/uikit.min.js"></script>
+        <script src="vendor/spectrum.js"></script>
+        <script src="vendor/customizer.js"></script>
+
+		<script src="https://js.arcgis.com/3.19compact/"></script>
+		<script src="assets/js/oauth.js"></script>
+
+        <link rel="stylesheet" href="assets/css/docs.css">
+		<link rel="stylesheet" href="assets/css/dijit.css">
+
+    </head>
+
+    <body>
+
+        <div id="customizer">
+            <div class="cm-sidebar">
+
+                <header class="cm-sidebar-header">
+
+                    <h2 class="cm-sidebar-title">Select a Starter Theme</h2>
+                    <div class="uk-form">
+                        <div class="uk-form-row">
+                            <select class="uk-width-1-1" name="style"></select>
+                        </div>
+						<div class="uk-form-row">
+							<div class="uk-grid uk-grid-medium">
+								<div class="uk-width-3-5">
+									<label><input type="checkbox" name="advanced"> Advanced Mode</label>
+								</div>
+							</div>
+						</div>
+                    </div>
+
+                </header>
+
+                <section class="cm-sidebar-content"></section>
+
+                <footer class="cm-sidebar-footer">
+
+                    <!-- <div class="uk-grid uk-grid-preserve">
+
+                        <div class="uk-width-1-2">
+                            <label><input type="checkbox" name="minify"> Minify CSS</label>
+                        </div>                       
+
+                    </div> -->
+
+                    <div class="uk-grid uk-grid-preserve">
+
+						<!--  
+						<div class="uk-width-1-2">
+                            <a href="#!" id="parse-btn" class="uk-button uk-button-expand uk-button-primary">Get CSS</a>
+                        </div> 
+						-->
+
+						<div id="anonymousPanel" class="uk-width-1-2" style="display: none;">
+							<span id="sign-in" class="uk-button uk-button-expand">Sign In</span>
+						</div>
+
+						<div id="uploadPanel" class="uk-width-1-2" style="display: none;"></div>
+
+                    </div>
+
+                </footer>
+
+            </div>
+
+            <div class="cm-wrapper">
+
+                <nav class="tm-navbar uk-navbar uk-navbar-attached">
+                    <div class="uk-container uk-container-center">
+
+                        <a class="uk-navbar-brand uk-visible-large" href="../code/index.html"><img class="uk-margin uk-margin-remove" src="assets/images/logo.svg"  title="UIkit" alt="UIkit"></a>
+
+						<ul id="personalizedPanel" class="uk-navbar-nav uk-visible-large pull-right" style="display: none;">
+                            <li><span><em id="userId"></em> <button class="uk-button" id="sign-out">Sign Out</button></span></li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+                <i class="uk-icon-spinner uk-icon-spin cm-spinner"></i>
+                
+				<div class="uk-alert uk-alert-danger uk-alert-large cm-error"></div>
+               
+				<iframe id="cm-theme-preview" src="pages/portal.html"></iframe>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

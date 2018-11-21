@@ -1,0 +1,31 @@
+#homeRotate,
+#HomeRotate {
+	display: @theme_rotate-visibility;
+	margin-top: @margin_rotate-margin-top;
+	margin-bottom: @margin_rotate-margin-bottom;
+	.hook-rotate;
+}
+
+.detailsShort {
+    height: @theme_rotate-height !important;
+}
+
+#matrixLayout {
+	position: relative;
+	background-image:data-uri('data:image/jpeg;base64,@{theme_rotate-organisation-logo}');
+	background-repeat: no-repeat;
+	background-position: center;
+	height: @theme_rotate-height !important;
+	min-height: @theme_rotate-height !important;
+	-webkit-border-radius: @theme_rotate-border-radius;
+	-moz-border-radius: @theme_rotate-border-radius;
+	-o-border-radius: @theme_rotate-border-radius;
+	border-radius: @theme_rotate-border-radius;
+	box-shadow: 0 1px 3px @theme_rotate-box-shadow;
+	.hook-matrix;
+}
+
+/* --- Hooks --- */
+
+.hook-rotate() {}
+.hook-matrix() {}
