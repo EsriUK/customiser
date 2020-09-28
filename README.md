@@ -1,7 +1,7 @@
-# customiser
+# Customiser - Retired
 *Beautiful ArcGIS Online Homepages in just a few clicks!*
 
-[Customiser](https://communityhub.esriuk.com/geoxchange/2018/11/20/introducing-customiser) is a proof-of-concept app that has been superseded by core functionality in ArcGIS Online. 
+[Customiser](https://communityhub.esriuk.com/geoxchange/2018/11/20/introducing-customiser) has now been superseded by core functionality in ArcGIS Online. 
 Read about how to customise your ArcGIS Online homepage [here](https://www.esri.com/arcgis-blog/products/arcgis-online/administration/create-a-great-home-page-for-your-organization/). 
 
 ## Licencing 
