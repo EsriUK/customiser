@@ -1,15 +1,8 @@
 # customiser
 *Beautiful ArcGIS Online Homepages in just a few clicks!*
 
-Try the app live [here](https://apps.esriuk.com/app/Customiser/3/wmt/view/350a76e03dcc4b04ab71a49c716de751/index.html).
-Read about why we made it [here](https://communityhub.esriuk.com/geoxchange/2018/11/20/introducing-customiser).
-
-## About the current release
-This is just the first beta of Customiser. We have lots of ideas for the future and we'd love to hear your ideas, too! Feel free to post issues and fork the code. 
-
-## How to get the code up and running
-All you'll need to do with the code is add the location of a web proxy and an ArcGIS App ID. 
-Both of these go in *assets\js\oauth.js* 
+[Customiser](https://communityhub.esriuk.com/geoxchange/2018/11/20/introducing-customiser) is a proof-of-concept app that has been superseded by core functionality in ArcGIS Online. 
+Read about how to customise your ArcGIS Online homepage [here](https://www.esri.com/arcgis-blog/products/arcgis-online/administration/create-a-great-home-page-for-your-organization/). 
 
 ## Licencing 
 Copyright 2018 ESRI (UK) Limited
